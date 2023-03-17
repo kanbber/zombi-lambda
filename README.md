@@ -1,6 +1,6 @@
-# Lambda Zombi
+# Lambda Zombie
 
-An lambda invoke is always executed in an execution 
+An lambda invoke is always executed in an execution environment. If an execution is interrupted, due to, for example, an exception, zombie code executions can happen.  
 
 ## init
 
