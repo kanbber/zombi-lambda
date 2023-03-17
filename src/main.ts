@@ -1,11 +1,12 @@
-import { App, Stack, StackProps } from 'aws-cdk-lib';
+import { App, Stack, StackProps, aws_lambda_nodejs as lambda } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
 export class MyStack extends Stack {
   constructor(scope: Construct, id: string, props: StackProps = {}) {
     super(scope, id, props);
-
-    // define resources here...
+    new lambda.NodejsFunction(this, 'zombi', {
+      functionName: 'zombi',
+    });
   }
 }
 
@@ -17,7 +18,7 @@ const devEnv = {
 
 const app = new App();
 
-new MyStack(app, 'zombi_lambda-dev', { env: devEnv });
+new MyStack(app, 'zombi-lambda-dev', { env: devEnv });
 // new MyStack(app, 'zombi_lambda-prod', { env: prodEnv });
 
 app.synth();

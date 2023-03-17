@@ -1,0 +1,12 @@
+{
+  "elements": [
+    {
+      "name": "Neu 1",
+      "wait": 1500
+    },
+    {
+      "name": "Neu lahm",
+      "wait": 600
+    }
+  ]
+}

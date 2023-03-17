@@ -1,0 +1,17 @@
+{
+  "elements": [
+    {
+      "name": "kaput",
+      "isFailing": true,
+      "wait": 500
+    },
+    {
+      "name": "Wo ist er hin?",
+      "wait": 1500
+    },
+    {
+      "name": "geht durch",
+      "wait": 200
+    }
+  ]
+}

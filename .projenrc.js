@@ -3,6 +3,16 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   cdkVersion: '2.1.0',
   defaultReleaseBranch: 'main',
   name: 'zombi_lambda',
+  tsconfigDev: {
+    compilerOptions: {
+      lib: ['es2020'],
+    }
+  },
+  tsconfig: {
+    compilerOptions: {
+      lib: ['es2020'],
+    }
+  },
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
